@@ -1,0 +1,26 @@
+.top_page_r ul li ul{
+    position: absolute;
+    left: 0;
+    top:26px;
+    display: none;
+}
+.top_page_r ul li ul li{
+    float: none;
+    margin-top: 2px;
+}
+.top_page_r ul li ul li a{
+    display: block;
+    text-decoration: none;
+    white-space: nowrap; /*超出宽度不换行*/
+}
+.top_page_r ul li ul li:hover{
+    color: white;
+    background-color: #0A84E3;
+}
+.top_page_r ul li ul li a:hover{
+    color: white;
+ }
+.top_page_r ul li:hover ul{
+    display: block;
+    background-color: #F7F7F7;
+}
