@@ -1,0 +1,340 @@
+#wrap {
+  height: 100%;
+  width: 100%;
+}
+/*header area*/
+#wrap .header {
+  height: 60px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#wrap .header .headerContent{
+  width: 980px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#wrap .header .logo{
+  float: left;
+  margin: 16px 20px 0 0 ;
+}
+#navs{
+  float: right;
+}
+#navs ul{
+  display: block;
+}
+#navs ul::after{   /*增加*/
+  content: "";
+  display: block;
+  clear: both;
+}
+#navs ul li{
+  float: left;
+  width: 90px;
+  line-height: 60px;
+  text-align: center;
+  list-style: none;
+}
+#navs ul li:hover{
+  background: #fc0;
+}
+
+#navs ul li:hover a {
+  color: #fff;
+}
+#navs ul li.active{
+  background: #fc0;
+}
+#navs ul li.active a{
+  color: #000;
+}
+#navs ul li a{
+  color: #fff;
+}
+
+/*header area*/
+#wrap .content {
+  position: relative;
+  width: 100%;
+  height: 587px;
+  overflow: hidden;
+}
+
+/*sideNav area*/
+#wrap .content .sideNav {
+  position: fixed;
+  top: 50%;
+  right: 1%;
+  z-index: 10;
+}
+#wrap .content .sideNav li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid;
+  margin-top: 10px;
+  cursor: pointer;
+}
+#wrap .content .sideNav li:hover {  /*增加*/
+  background: #000;
+  cursor: default;
+}
+#wrap .content .sideNav li.active {
+  background: #000;
+  cursor: default;
+}
+
+/*contentList area*/
+#wrap .content .contentList {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  height: 587px;
+  transition: 1s top;    /*增加*/
+}
+
+/*firstLi area*/
+#wrap .content .contentList .firstLi {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-position: 50% 50%!important;
+  background: url(../img/s1.jpg) no-repeat;
+  overflow: hidden;
+}
+#wrap .content .contentList .firstLi .first{
+  width: 980px;
+  height: 578px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+#wrap .content .contentList .firstLi .first img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -545px;
+  margin-top: -260px;
+  transition: .5s opacity;   /*增加*/
+}
+
+
+/*common style start*/
+#wrap .content .contentList .secondLi,
+#wrap .content .contentList .thirdLi,
+#wrap .content .contentList .fourthLi,
+#wrap .content .contentList .fifthLi {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-position: 50% 50%!important;
+  overflow: hidden;
+  list-style: none;
+}
+#wrap .content .contentList .secondLi .second,
+#wrap .content .contentList .thirdLi .third,
+#wrap .content .contentList .fourthLi .four,
+#wrap .content .contentList .fifthLi .five {
+  width: 980px;
+  height: 578px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+#wrap .content .contentList .secondLi .second .left,
+#wrap .content .contentList .thirdLi .third .left,
+#wrap .content .contentList .fourthLi .four .left,
+#wrap .content .contentList .fifthLi .five .left{
+  position: absolute;
+  height: 437px;
+  margin-top: 40px;
+  z-index: 1;
+}
+#wrap .content .contentList .secondLi .second .left .photoList,
+#wrap .content .contentList .thirdLi .third .left .photoList,
+#wrap .content .contentList .fourthLi .four .left .photoList,
+#wrap .content .contentList .fifthLi .five .left .photoList{
+  width: 100%;
+  height: 100%;
+}
+#wrap .content .contentList .secondLi .second .left .photoList li,
+#wrap .content .contentList .thirdLi .third .left .photoList li,
+#wrap .content .contentList .fourthLi .four .left .photoList li,
+#wrap .content .contentList .fifthLi .five .left .photoList li{
+  float: left;
+  margin-right: 20px;
+  text-align: center;
+  list-style: none;
+}
+#wrap .content .contentList .secondLi .second .left .photoList li img,
+#wrap .content .contentList .thirdLi .third .left .photoList li img,
+#wrap .content .contentList .fourthLi .four .left .photoList li img,
+#wrap .content .contentList .fifthLi .five .left .photoList li img{
+  display: block;
+}
+#wrap .content .contentList .secondLi .second .left .photoList li p,
+#wrap .content .contentList .thirdLi .third .left .photoList li p,
+#wrap .content .contentList .fourthLi .four .left .photoList li p,
+#wrap .content .contentList .fifthLi .five .left .photoList li p{
+  margin: 20px 0;
+  font-size: 18px;
+  display: block;
+}
+#wrap .content .contentList .secondLi .second .left .photoList li a,
+#wrap .content .contentList .thirdLi .third .left .photoList li a,
+#wrap .content .contentList .fourthLi .four .left .photoList li a,
+#wrap .content .contentList .fifthLi .five .left .photoList li a{
+  margin-left: 80px;
+  background: #fc0;
+  width: 98px;
+  height: 30px;
+  background: url(../img/buy.jpg) no-repeat;
+  background-position: 50% 50%;
+  display: block;
+}
+#wrap .content .contentList .secondLi .second .right,
+#wrap .content .contentList .thirdLi .third .right,
+#wrap .content .contentList .fourthLi .four .right,
+#wrap .content .contentList .fifthLi .five .right{
+  position: absolute;
+  right: -15%;
+  margin-top: 5%;
+  padding-right: 15px;
+  border-right: 2px solid;
+}
+#wrap .content .contentList .secondLi .second .right h1,
+#wrap .content .contentList .thirdLi .third .right h1,
+#wrap .content .contentList .fourthLi .four .right h1,
+#wrap .content .contentList .fifthLi .five .right h1{
+  font-size: 34px;
+  color: #333;
+  font-weight: 100;
+  text-align: right;
+}
+#wrap .content .contentList .secondLi .second .right p,
+#wrap .content .contentList .thirdLi .third .right p,
+#wrap .content .contentList .fourthLi .four .right p,
+#wrap .content .contentList .fifthLi .five .right p{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+  text-align: right;
+}
+#wrap .content .contentList .secondLi .second .right a,
+#wrap .content .contentList .thirdLi .third .right a,
+#wrap .content .contentList .fourthLi .four .right a,
+#wrap .content .contentList .fifthLi .five .right a{
+  color: #333;
+  text-align: right;
+  display: block;
+}
+#wrap .content .contentList .secondLi .second .bg,
+#wrap .content .contentList .thirdLi .third .bg,
+#wrap .content .contentList .fourthLi .four .bg,
+#wrap .content .contentList .fifthLi .five .bg {
+  position: absolute;
+  right: -193px;
+  bottom: 0;
+  display: block;
+}
+#wrap .content .contentList .secondLi .second .bg img,
+#wrap .content .contentList .thirdLi .third .bg img,
+#wrap .content .contentList .fourthLi .four .bg img,
+#wrap .content .contentList .secondLi .second .bg img{
+  display: block;
+}
+/*common*/
+
+
+
+
+/* secondLi area*/
+#wrap .content .contentList .secondLi {
+  background: url(../img/s2.jpg) no-repeat;
+}
+#wrap .content .contentList .secondLi .second .left{
+  left: -140px;
+  width: 837px;
+}
+#wrap .content .contentList .secondLi .second .left .photoList li{
+  transition: 1s transform;
+}
+#wrap .content .contentList .secondLi .second .left .photoList li img:nth-child(1) {
+  transform: translateY(0px);
+}
+#wrap .content .contentList .secondLi .second .left .photoList li img:nth-child(2) {
+  transform: translateY(0px);
+}
+#wrap .content .contentList .secondLi .second .left .photoList li img:nth-child(3) {
+  transform: translateY(0px);
+}
+#wrap .content .contentList .secondLi .second .right{
+  transition: 1s transform;
+  transform: translateY(0px);
+}
+/* thirdLi area*/
+#wrap .content .contentList .thirdLi {
+  background: url(../img/s3.jpg) no-repeat;
+}
+#wrap .content .contentList .thirdLi .third .left{
+  left: -145px;
+  width: 837px;
+}
+#wrap .content .contentList .thirdLi .third .left .photoList li{
+  transition: 1s transform;
+}
+#wrap .content .contentList .thirdLi .third .left .photoList li img:nth-child(2) {
+  transform: translateX(0px);
+}
+#wrap .content .contentList .thirdLi .third .left .photoList li img:nth-child(3) {
+  transform: translateX(0px);
+}
+#wrap .content .contentList .thirdLi .third .right{
+  transition: 1s transform;
+  transform: translateX(0px);
+}
+
+
+/* fourthLi area*/
+#wrap .content .contentList .fourthLi {
+  background: url(../img/s4.jpg) no-repeat;
+}
+#wrap .content .contentList .fourthLi .four .left{
+  left: -155px;
+  width: 1000px;
+}
+#wrap .content .contentList .fourthLi .four .left .photoList li{
+  transition: 2s;
+}
+#wrap .content .contentList .fourthLi .four .right{
+  transition: 2s opacity;
+  opacity: 0;
+}
+/* fifthLiLi area*/
+#wrap .content .contentList .fifthLi {
+  background: url(../img/s5.jpg) no-repeat;
+}
+#wrap .content .contentList .fifthLi .five .left{
+  left: -145px;
+  width: 1000px;
+}
+
+#wrap .content .contentList .fifthLi .five.left .photoList li{
+  transition: 1s transform;
+  transform: translate3d(-1000px, -800px, -500px) rotateX(145deg);
+}
+#wrap .content .contentList .fifthLi .five .right{
+  transition: 1s opacity;
+  opacity: 0;
+}
